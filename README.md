@@ -2,6 +2,7 @@
 InnoSetup command-line utility installer template script. The script will create an installer for a 32bit program and append it to the **%PATH%** environment variable to be able to execute it from the command-line.
 
 ## How To
+Download and install innosetup from [official website](https://jrsoftware.org/) or use the version in `./inno-release-6.2`
 
 Clone repository.
 
