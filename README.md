@@ -5,11 +5,10 @@ InnoSetup command-line utility installer template script. The script will create
 
 Clone repository.
 
-    https://github.com/Amine-Belkacem/inno-cmd-template.git
+    git clone https://github.com/Amine-Belkacem/inno-cmd-template.git
 
-Replace `myprog.exe` with your utility and `license.txt`  with your license.
-Replace `readme.txt` content with your content. 
-Adapt `script.iss` to your needs.
+Replace `myprog.exe` with your utility. 
 
+Replace the content of `readme.txt` and `license.txt` with your content.
 
-
+Adapt `script.iss` to your needs and build.
