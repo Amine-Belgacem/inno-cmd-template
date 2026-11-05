@@ -1,6 +1,8 @@
 # Inno Setup CLI Installer Template
 
-An Inno Setup template for packaging a Windows command-line utility and adding its installation directory to the system `PATH`.
+This Inno Setup template packages a Windows command-line utility with its usage file and an installation-directory entry in the system `PATH`. It is useful when handing a CLI program to users who should be able to run its command without first navigating to the installed executable.
+
+The script provides a starting point for application metadata, file copying, a Start menu entry, and uninstall handling. Replace the sample program and text files, then adapt and test the paths and registry behavior for your own utility. The template is editable packaging code, not a finished installer for an arbitrary application.
 
 ## Use
 
