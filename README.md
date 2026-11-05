@@ -1,15 +1,17 @@
-# Inno-cmd-template
-InnoSetup command-line utility installer template script. The script will create an installer for a 32bit program and append it to the **%PATH%** environment variable to be able to execute it from the command-line.
+# Inno Setup CLI Installer Template
 
-## Get started
-Download and install innosetup from [official website](https://jrsoftware.org/) or use the version in `./inno-release-6.2`
+An Inno Setup template for packaging a Windows command-line utility and adding its installation directory to the system `PATH`.
 
-Clone repository.
+## Use
 
-    git clone https://github.com/Amine-Belgacem/inno-cmd-template.git
+1. Install Inno Setup. The original 6.2.0 installer is retained in [inno-release-6.2.0](inno-release-6.2.0).
+2. Replace `myprog.exe` with your utility.
+3. Edit [usage.txt](usage.txt), [license.txt](license.txt), and the application settings in [script.iss](script.iss).
+4. Review the shortcut names, executable paths, and registry/uninstall code for your application.
+5. Open `script.iss` in Inno Setup and compile it.
 
-Replace `myprog.exe` with your utility. 
+## Template behavior
 
-Replace the content of `readme.txt` and `license.txt` with your content.
+The script copies the executable and usage file, creates a Start menu entry, appends the installation directory to the machine-wide `PATH`, and attempts to remove it during uninstall.
 
-Adapt `script.iss` to your needs and build.
+This is a template requiring adaptation. Test installation and uninstallation on a disposable Windows environment, particularly the system `PATH` changes, before distributing a customized installer.
