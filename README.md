@@ -2,7 +2,7 @@
 
 This Inno Setup template packages a Windows command-line utility with its usage file and an installation-directory entry in the system `PATH`. It is useful when handing a CLI program to users who should be able to run its command without first navigating to the installed executable.
 
-The script provides a starting point for application metadata, file copying, a Start menu entry, and uninstall handling. Replace the sample program and text files, then adapt and test the paths and registry behavior for your own utility. The template is editable packaging code, not a finished installer for an arbitrary application.
+The script provides a starting point for application metadata, file copying, a Start menu entry, and uninstall handling. Replace the sample program and text files, then adapt and test the paths and registry behavior for your own utility.
 
 ## Use
 
@@ -16,4 +16,4 @@ The script provides a starting point for application metadata, file copying, a S
 
 The script copies the executable and usage file, creates a Start menu entry, appends the installation directory to the machine-wide `PATH`, and attempts to remove it during uninstall.
 
-This is a template requiring adaptation. Test installation and uninstallation on a disposable Windows environment, particularly the system `PATH` changes, before distributing a customized installer.
+Test installation and uninstallation, especially the system `PATH` changes, before distributing your installer.
